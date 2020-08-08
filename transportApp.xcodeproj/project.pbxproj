@@ -16,6 +16,11 @@
 		B73F607924DE661800FC58F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B73F607724DE661800FC58F8 /* LaunchScreen.storyboard */; };
 		B73F608424DE661800FC58F8 /* transportAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F608324DE661800FC58F8 /* transportAppTests.swift */; };
 		B73F608F24DE661800FC58F8 /* transportAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F608E24DE661800FC58F8 /* transportAppUITests.swift */; };
+		B73F609D24DE6B9F00FC58F8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F609C24DE6B9F00FC58F8 /* MapView.swift */; };
+		B73F609F24DE828400FC58F8 /* BusDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F609E24DE828400FC58F8 /* BusDetailsView.swift */; };
+		B73F60A324DE8C6800FC58F8 /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F60A224DE8C6800FC58F8 /* CustomPointAnnotation.swift */; };
+		B73F60A624DE8CA000FC58F8 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F60A524DE8CA000FC58F8 /* CustomAnnotationView.swift */; };
+		B73F60AA24DE8D1600FC58F8 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F60A924DE8D1600FC58F8 /* Bus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		B73F608A24DE661800FC58F8 /* transportAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = transportAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B73F608E24DE661800FC58F8 /* transportAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transportAppUITests.swift; sourceTree = "<group>"; };
 		B73F609024DE661800FC58F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B73F609C24DE6B9F00FC58F8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B73F609E24DE828400FC58F8 /* BusDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusDetailsView.swift; sourceTree = "<group>"; };
+		B73F60A224DE8C6800FC58F8 /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
+		B73F60A524DE8CA000FC58F8 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		B73F60A924DE8D1600FC58F8 /* Bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +113,8 @@
 			children = (
 				B73F606924DE661700FC58F8 /* AppDelegate.swift */,
 				B73F606B24DE661700FC58F8 /* SceneDelegate.swift */,
-				B73F607024DE661700FC58F8 /* ContentView.swift */,
+				B73F60A024DE8C3800FC58F8 /* MapView */,
+				B73F60A124DE8C4600FC58F8 /* Details */,
 				B73F607224DE661800FC58F8 /* Assets.xcassets */,
 				B73F607724DE661800FC58F8 /* LaunchScreen.storyboard */,
 				B73F607A24DE661800FC58F8 /* Info.plist */,
@@ -137,6 +148,34 @@
 				B73F609024DE661800FC58F8 /* Info.plist */,
 			);
 			path = transportAppUITests;
+			sourceTree = "<group>";
+		};
+		B73F60A024DE8C3800FC58F8 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				B73F60A724DE8D0100FC58F8 /* Model */,
+				B73F607024DE661700FC58F8 /* ContentView.swift */,
+				B73F609C24DE6B9F00FC58F8 /* MapView.swift */,
+				B73F60A524DE8CA000FC58F8 /* CustomAnnotationView.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		B73F60A124DE8C4600FC58F8 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				B73F609E24DE828400FC58F8 /* BusDetailsView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		B73F60A724DE8D0100FC58F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B73F60A924DE8D1600FC58F8 /* Bus.swift */,
+				B73F60A224DE8C6800FC58F8 /* CustomPointAnnotation.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73F60AA24DE8D1600FC58F8 /* Bus.swift in Sources */,
+				B73F60A324DE8C6800FC58F8 /* CustomPointAnnotation.swift in Sources */,
 				B73F606F24DE661700FC58F8 /* transportApp.xcdatamodeld in Sources */,
 				B73F606A24DE661700FC58F8 /* AppDelegate.swift in Sources */,
+				B73F609D24DE6B9F00FC58F8 /* MapView.swift in Sources */,
 				B73F607124DE661700FC58F8 /* ContentView.swift in Sources */,
+				B73F609F24DE828400FC58F8 /* BusDetailsView.swift in Sources */,
+				B73F60A624DE8CA000FC58F8 /* CustomAnnotationView.swift in Sources */,
 				B73F606C24DE661700FC58F8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
